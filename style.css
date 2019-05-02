@@ -6,7 +6,7 @@ body {
   font-family: "Raleway", "sans-serif";
   grid-template-columns: 300px 1fr;
   grid-gap: 20px;
-  background: #f7f7f7
+  background: #f7f7f7;
 }
 
 header {
@@ -16,6 +16,23 @@ header {
 nav {
   grid-area: navbar;
   position: fixed;
+  padding: 0 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #4d4e53;
+}
+
+nav li {
+  padding: 20px 0;
+  font-size: 25px;
+  list-style: lower-greek;
+}
+
+li a {
+  text-decoration: none;
 }
 
 main {
@@ -44,4 +61,24 @@ code {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+}
+@media screen and (max-width: 815px) {
+  body {
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: auto;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 275px;
+  }
+
+  ul {
+    flex-direction: column;
+    height: 300px;
+    flex-wrap: wrap
+  }
 }
