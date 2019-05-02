@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto;
+  font-family: "Raleway", "sans-serif";
+  grid-template-columns: 300px 1fr;
+  grid-gap: 20px;
+  background: #f7f7f7
+}
+
+header {
+  font-size: 30px;
+}
+
+nav {
+  grid-area: navbar;
+  position: fixed;
+}
+
+main {
+  grid-area: main;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #99cce7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
